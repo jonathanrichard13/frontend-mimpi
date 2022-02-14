@@ -1,0 +1,284 @@
+:root {
+    --footer-font-size: 1rem;
+    --text-font-size: 1.2rem;
+    --title-font-size: 1.5rem;
+    --logo-font-size: 3.5rem;
+}
+
+.homepage-all-container {
+    box-sizing: border-box;
+    background-color: #eee;
+    min-height: 100vh;
+}
+
+.homepage-navbar {
+    background-color: white;
+    display: flex;
+}
+
+.homepage-logo {
+    font-size: var(--logo-font-size);
+    color: #2bad2b;
+    font-weight: 700;
+    margin-left: 10px;
+    position: relative;
+    top: -2.5px;
+    left: 3%;
+}
+
+.homepage-navbar i {
+    /* flex: 1; */
+    margin-left: auto;
+    align-self: center;
+    margin-right: 10px;
+}
+
+.homepage-profile-icon {
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: block;
+    width: 35px;
+    height: 35px;
+    align-self: center;
+    margin-right: 10px;
+    /* flex: 1; */
+}
+
+.homepage-profile-icon:hover {
+    background-color: #ddd;
+}
+
+.homepage-profile-icon p {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-weight: 600;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+.homepage-left-container {
+    text-align: center;
+}
+
+.homepage-container {
+    margin-top: 6%;
+}
+
+.homepage-left-container,
+.homepage-right-container {
+    background-color: white;
+    padding: 2%;
+    min-height: 50vh;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.homepage-left-container p {
+    color: rgba(1, 1, 1, 0.5);
+    margin-top: 15%;
+    font-size: var(--text-font-size);
+}
+
+
+.homepage-container em {
+    color:#2bad2b;
+    font-style: normal;
+    font-weight: 650;
+    font-size: var(--title-font-size);
+}
+
+.homepage-right-title {
+    display: flex;
+}
+
+.help-button{
+    margin-left: auto;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.help-button:hover {
+    background-color: lightgray;
+}
+
+.help-button p {
+    transform: translate(0, -18%);
+}
+
+#popup-info {
+    background-color: rgba(1, 1, 1, 0.5);
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: absolute;
+    z-index: 2;
+    animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    -ms-animation: fadeIn 1s;
+}
+
+#popup-info img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.homepage-target-setting {
+    margin-left: 3%;
+}
+
+.target-setting-input-container * {
+    display: inline;
+}
+
+.target-setting-input-container button {
+    margin-left: 5%;
+    background-color: white;
+    outline: none;
+    border: none;
+}
+
+.target-setting-input-container button em:hover{
+    color: #2b7d2b !important;
+}
+
+.target-setting-input {
+    margin-top: 8%;
+    margin-left: 1%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #2bad2b;
+    width: 60%;
+}
+.target-setting-input:focus {
+    outline: none;
+    border-bottom: 2px solid #2bad2b;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: var(--text-font-size);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: var(--text-font-size);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    font-size: var(--text-font-size);
+  }
+
+footer {
+    clear: both;
+    position: relative;
+}
+
+.homepage-footer {
+    color: black;
+    font-size: var(--footer-font-size);
+    display: block;
+    position: absolute;
+    top: 92vh;
+    width: 100%;
+}
+
+.hide-button {
+    position: relative;
+    left: -9999px;
+}
+
+
+@media only screen and (max-width: 1200px){
+    :root {
+        --footer-font-size: 0.9rem;
+        --text-font-size: 1rem;
+        --title-font-size: 1.2rem;
+        --logo-font-size: 3.2rem;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    :root {
+        --footer-font-size: 0.8rem;
+        --text-font-size: 0.9rem;
+        --title-font-size: 1.1rem;
+        --logo-font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    :root {
+        --footer-font-size: 0.7rem;
+        --text-font-size: 0.8rem;
+        --title-font-size: 1rem;
+        --logo-font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .row {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .homepage-left-container {
+        margin-top: 10%;
+    }
+
+    .homepage-footer {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .row {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    :root {
+        --text-font-size: 0.7rem;
+        --title-font-size: 0.9rem;
+        --logo-font-size: 2.8rem;
+    }
+}
+

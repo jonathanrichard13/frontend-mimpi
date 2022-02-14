@@ -1,0 +1,268 @@
+.sign-in-container{
+    margin-left: 27%;
+    margin-right: 27%;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    position: relative;
+    /* outline: 1px solid #555; */
+    border: 1.5px solid #e5e5e5;
+    padding: 2%;
+    display: grid;
+    padding-bottom: 30px;
+    background-color: white !important;
+}
+
+.sign-in-container .sign-in-top {
+    justify-content: center;
+}
+
+
+.sign-in-top {
+    display: flex;
+}
+
+.sign-in-icon {
+    font-size: 5rem;
+    color: #2bad2b;
+    font-weight: 700;
+}
+
+.sign-in-title {
+    position: relative;
+    left: 2%;
+}
+
+.sign-in-title1 {
+    color: #2bad2b;
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+    top: 20%;
+}
+
+.sign-in-title2 {
+    font-size: 1.3rem;
+    position: relative;
+    top: 8%;
+}
+
+.sign-in-main {
+    line-height: 2;
+}
+
+.sign-in-main * {
+    margin-top: 10px;
+}
+
+.sign-in-main .sign-in-input-wrapper {
+    margin-left: 25%;
+}
+
+.sign-in-input {
+    position: absolute;
+    left: 45%;
+    width: 30%;
+    border: 1px solid #777;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+
+.sign-in-input:focus {
+    border-color: #2a892a;
+    outline: none;
+}
+
+#username-password-invalid {
+    display: none;
+    color: red;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+#sign-in-btn {
+    background-color: #2a892a;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-weight: 600;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.to-sign-up {
+    text-align: center;
+    position: relative;
+    display: block;
+    width: 100%;
+    top: 1.5vh;
+    font-size: 0.9rem;
+}
+
+
+@media only screen and (max-width: 1200px){
+    .sign-in-container{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .sign-in-icon {
+        font-size: 4rem;
+    }
+    
+    .sign-in-title1 {
+        font-size: 1.75rem;
+    }
+
+    .sign-in-title2 {
+        font-size: 1.2rem;
+    }
+
+    .sign-in-main {
+        line-height: 1.5;
+    }
+
+    .sign-in-main *{
+        font-size: 0.9rem;
+    }
+
+    .to-sign-up {
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media only screen and (max-width: 1000px){
+    .sign-in-container{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .sign-in-icon {
+        font-size: 3.8rem;
+    }
+    
+    .sign-in-title1 {
+        font-size: 1.6rem;
+    }
+
+    .sign-in-title2 {
+        font-size: 1.1rem;
+    }
+
+    .sign-in-main {
+        line-height: 1.5;
+    }
+
+    .sign-in-main *{
+        font-size: 0.85rem;
+    }
+
+    .to-sign-up {
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .sign-in-container{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .sign-in-icon {
+        font-size: 3.5rem;
+    }
+    
+    .sign-in-title1 {
+        font-size: 1.5rem;
+    }
+
+    .sign-in-title2 {
+        font-size: 1rem;
+    }
+
+    .sign-in-main {
+        line-height: 1.5;
+    }
+
+    .sign-in-main *{
+        font-size: 0.8rem;
+    }
+
+    .to-sign-up {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .sign-in-container{
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .sign-in-icon {
+        font-size: 3rem;
+    }
+    
+    .sign-in-title1 {
+        font-size: 1.2rem;
+    }
+
+    .sign-in-title2 {
+        font-size: 0.9rem;
+    }
+
+    .sign-in-main {
+        line-height: 1.6;
+    }
+
+    .sign-in-main *{
+        font-size: 0.7rem;
+    }
+
+    .to-sign-up {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .sign-in-container{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .sign-in-icon {
+        font-size: 3.6rem;
+    }
+    
+    .sign-in-title1 {
+        font-size: 1.1rem;
+    }
+
+    .sign-in-title2 {
+        font-size: 0.85rem;
+    }
+
+    .sign-in-main {
+        line-height: 1.6;
+    }
+    .sign-in-main *{
+        font-size: 0.65rem;
+    }
+
+    .to-sign-up {
+        font-size: 0.55rem;
+    }
+}
+
+/* @media only screen and (min-height: 1000px){
+    .to-sign-up {
+        top: 1vh;
+    }
+} */
